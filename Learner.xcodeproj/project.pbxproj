@@ -17,6 +17,10 @@
 		EA0054EC2784F3CD00B48625 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0054C22784F3CC00B48625 /* ContentView.swift */; };
 		EA0054ED2784F3CD00B48625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0054C32784F3CD00B48625 /* Assets.xcassets */; };
 		EA0054EE2784F3CD00B48625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0054C32784F3CD00B48625 /* Assets.xcassets */; };
+		EA0054FE2784F9E200B48625 /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0054FD2784F9E200B48625 /* CourseRow.swift */; };
+		EA0054FF2784F9E200B48625 /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0054FD2784F9E200B48625 /* CourseRow.swift */; };
+		EA0055012784FFE400B48625 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0055002784FFE400B48625 /* CoursesView.swift */; };
+		EA0055022784FFE400B48625 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0055002784FFE400B48625 /* CoursesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,8 @@
 		EA0054E12784F3CD00B48625 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0054E52784F3CD00B48625 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		EA0054E72784F3CD00B48625 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		EA0054FD2784F9E200B48625 /* CourseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRow.swift; sourceTree = "<group>"; };
+		EA0055002784FFE400B48625 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 			children = (
 				EA0054C12784F3CC00B48625 /* LearnerApp.swift */,
 				EA0054C22784F3CC00B48625 /* ContentView.swift */,
+				EA0054FD2784F9E200B48625 /* CourseRow.swift */,
+				EA0055002784FFE400B48625 /* CoursesView.swift */,
 				EA0054C32784F3CD00B48625 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -300,7 +308,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA0054EB2784F3CD00B48625 /* ContentView.swift in Sources */,
+				EA0054FE2784F9E200B48625 /* CourseRow.swift in Sources */,
 				EA0054E92784F3CD00B48625 /* LearnerApp.swift in Sources */,
+				EA0055012784FFE400B48625 /* CoursesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +319,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA0054EC2784F3CD00B48625 /* ContentView.swift in Sources */,
+				EA0054FF2784F9E200B48625 /* CourseRow.swift in Sources */,
 				EA0054EA2784F3CD00B48625 /* LearnerApp.swift in Sources */,
+				EA0055022784FFE400B48625 /* CoursesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
