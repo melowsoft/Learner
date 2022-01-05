@@ -117,9 +117,9 @@
 			children = (
 				EA0054C12784F3CC00B48625 /* LearnerApp.swift */,
 				EA00550927850F9200B48625 /* Navigation */,
+				EA00551127859EA900B48625 /* Model */,
 				EA00550A27850FBD00B48625 /* Items */,
 				EA0055002784FFE400B48625 /* CoursesView.swift */,
-				EA00550E2785177C00B48625 /* Course.swift */,
 				EA00550B2785102400B48625 /* CourseList.swift */,
 				EA0054C32784F3CD00B48625 /* Assets.xcassets */,
 			);
@@ -179,6 +179,14 @@
 				EA00550627850D6200B48625 /* CourseItem.swift */,
 			);
 			path = Items;
+			sourceTree = "<group>";
+		};
+		EA00551127859EA900B48625 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA00550E2785177C00B48625 /* Course.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

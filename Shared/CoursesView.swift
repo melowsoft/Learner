@@ -10,6 +10,8 @@ import SwiftUI
 struct CoursesView: View {
     @State var show = false
     @Namespace var namespace
+    @State var selectedItem: Course? = nil
+    @State var isDisable = false
     
     var body: some View {
         ZStack {
@@ -19,6 +21,14 @@ struct CoursesView: View {
                         CourseItem(course: item)
                             .matchedGeometryEffect(id: item.id, in: namespace, isSource: !show)
                         .frame(width: 335, height: 250)
+                        .onTapGesture {
+                            withAnimation(.spring()) {
+                                show.toggle()
+                                selectedItem = item
+                                isDisable = true
+                            }
+                        }
+                        .disabled(isDisable)
                     }
                     
 
@@ -26,11 +36,20 @@ struct CoursesView: View {
                 .frame(maxWidth: .infinity)
             }
             
-            if show {
+            if selectedItem != nil {
                 ScrollView {
-                    CourseItem(course: courses[0])
-                        .matchedGeometryEffect(id: courses[0].id, in: namespace)
+                    CourseItem(course: selectedItem!)
+                        .matchedGeometryEffect(id: selectedItem!.id, in: namespace)
                         .frame(height: 300)
+                        .onTapGesture {
+                            withAnimation(.spring()) {
+                                show.toggle()
+                                selectedItem = nil
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                    isDisable = false
+                                }
+                            }
+                        }
                     
                     VStack {
                         ForEach(0 ..< 20) { item in
@@ -56,12 +75,7 @@ struct CoursesView: View {
             
             
         }
-        .onTapGesture {
-            withAnimation(.spring()) {
-                show.toggle()
-            }
-            
-        }
+        
     }
 }
 
